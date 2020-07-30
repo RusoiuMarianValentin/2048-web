@@ -1,3 +1,6 @@
+
+
+
 let grid;
 
 function setup(){
@@ -17,7 +20,7 @@ function setup(){
 function addNumber(){
     let options = [];
     for(let i=0; i<4; i++){
-        for(let j=o;j<4;j++){
+        for(let j=0;j<4;j++){
             if(grid[i][j] === 0){
                 options.push({
                     x: i,
@@ -26,10 +29,11 @@ function addNumber(){
             }
         }        
     }
-    if(options.lenght>0)
+    if(options.lenght>0);
     let spot = random(options);
+    let r = random(1);
     grid[spot.x][spot.y] = r > 0.5 ? 2 : 4;
-    
+        
      
 
 }
